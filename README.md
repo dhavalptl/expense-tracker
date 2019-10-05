@@ -1,1 +1,1 @@
-Daily expense tracker. Application build with reactjs
+Daily expense tracker.
