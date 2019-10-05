@@ -18,7 +18,7 @@ jobs:
         DOCKER_HUB_KEY: ${{ secrets.DKR_TKN }}
       run: |
         echo 'Docker login'
-        docker login -u $DOCKER_HUB -p $DOCKER_HUB_KEY
+        docker login -u $DOCKER_HUB --password-stdin $DOCKER_HUB_KEY
         echo 'Running build.....'
         docker build -t $DOCKER_HUB/expense-tracker .
         echo 'Pushing image...'
